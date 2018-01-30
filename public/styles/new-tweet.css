@@ -27,14 +27,13 @@
 }
 
 .new-tweet textarea {  /* child of h2*/
-  width: 1000px;
+  width: 900px;
   padding-left: 10px;
 
 }
 
 .new-tweet input[type=submit]{  /* child of h2 */
   position: relative;
-  left: 10px;
   width: 301px;
   margin-bottom: 15px;
 }

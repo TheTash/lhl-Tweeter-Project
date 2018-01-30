@@ -10,8 +10,8 @@ html {
 .navbar-fixed-top {
   position: fixed;
   z-index: 1030;
-  border-radius: 40px;
-  border-top: 15px solid beige;
+  border-radius: 28px;
+  border-top: 12px solid beige;
 }
 .navbar{
   min-height: 80px;
