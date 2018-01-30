@@ -1,9 +1,9 @@
 .container {                     /*the white stuff */
   display: block;
-  width: 1000px;
+  position: relative;
+  width: 1200px;
   height: 1900px;
-  padding-top: 3em;
-  padding-bottom: 1em;
+  padding-top: 6em;
   padding-left: 2em;
   padding-right: 2em;
 
@@ -11,31 +11,35 @@
 
 .new-tweet{                      /* the grey area*/
   display: block;
-  border-radius: 30px;
+  border-radius: 16px;
   border-style: solid;
   border-color: grey;
-  margin: auto;
   background-color: #ECECEC;
-
+  padding-left: 20px;
 }
+
 .new-tweet h2{
   text-align: left;
-  margin-left: 15px;
+  margin-top: 30px
+  margin-left: 30px;  /*not working*/
   margin-right: 30px;
-  width: auto;
   border-bottom: 1px solid black;
 }
-.new-tweet textarea{
-  width: 700px;
+
+.new-tweet textarea {  /* child of h2*/
+  width: 1000px;
   padding-left: 10px;
 
 }
-.new-tweet input[type=submit]{
-  clear:left;
+
+.new-tweet input[type=submit]{  /* child of h2 */
+  position: relative;
+  left: 10px;
   width: 301px;
   margin-bottom: 15px;
 }
-.counter{
+
+.counter{   /* child of h2*/
   float: right;
   margin-right: 50px;
   margin-bottom: 5px;

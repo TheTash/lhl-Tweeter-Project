@@ -8,6 +8,7 @@ html {
 
 
 .navbar-fixed-top {
+  position: fixed;
   z-index: 1030;
   border-radius: 40px;
   border-top: 15px solid beige;
