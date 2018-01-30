@@ -1,0 +1,42 @@
+.container {                     /*the white stuff */
+  display: block;
+  width: 1000px;
+  height: 1900px;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+
+}
+
+.new-tweet{                      /* the grey area*/
+  display: block;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: grey;
+  margin: auto;
+  background-color: #ECECEC;
+
+}
+.new-tweet h2{
+  text-align: left;
+  margin-left: 15px;
+  margin-right: 30px;
+  width: auto;
+  border-bottom: 1px solid black;
+}
+.new-tweet textarea{
+  width: 700px;
+  padding-left: 10px;
+
+}
+.new-tweet input[type=submit]{
+  clear:left;
+  width: 301px;
+  margin-bottom: 15px;
+}
+.counter{
+  float: right;
+  margin-right: 50px;
+  margin-bottom: 5px;
+}

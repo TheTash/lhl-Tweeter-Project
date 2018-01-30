@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.navbar-fixed-top {
+  z-index: 1030;
+  border-radius: 40px;
+  border-top: 15px solid beige;
+}
+.navbar{
+  min-height: 80px;
+  width: 100vw;
+  padding-left: 2em;
+  padding-right: 2em;
+  color:  #e8fdff;
+
+}
+.navbar-inverse {
+  background-color: #00a087
+}
+
+#nav-bar .logo {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+#nav-bar .header {
+  font-size: 2em;
+  line-height: 2em;
+  padding: 10px;
+  margin: auto;
+}
