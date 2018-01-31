@@ -61,6 +61,8 @@ const data = [
       let $share = $('<i>').addClass('fa fa-retweet').attr('aria-hidden', true);
       let $like = $('<i>').addClass('fa fa-heart').attr('aria-hidden', true);
 
+
+
       $header.append($img);
       $header.append($h1);
       $header.append($h2);
@@ -77,13 +79,22 @@ const data = [
 
       return $article;
     }
-
     function renderTweets (tweets) {
 
       const articles_elm = $('.restOfTheTweets')
       tweets.forEach((tweet) => {
         articles_elm.append(createTweetElement(tweet));
+
       });
     }
       renderTweets(data)
-  });
+      $("form").submit(function(event){
+        const articles_elm = $('.restOfTheTweets')
+        event.preventDefault();
+        console.log( $( this ).serialize());
+      });
+      function loadTweets() {
+        articles_elm.append(createTweetElement(tweet));
+      }
+
+    });

@@ -12,7 +12,7 @@
   transition: opacity .6s ease-in-out;
 }
 
-.restOfTheTweets:hover {
+.tweet-box:hover {
   opacity: 1.0;
   transition: opacity .3s ease-in-out
 }
@@ -26,7 +26,6 @@
 .restOfTheTweets header {
   margin: 1px;
   padding: 0 0 0 10px;
-
 }
 
 .restOfTheTweets .logo {
@@ -76,4 +75,7 @@
 .restOfTheTweets .tweet-icons {
   float: right;
   margin: 8px;
+}
+.restOfTheTweets .tweet-icons i {
+  margin-right: 6px;
 }
