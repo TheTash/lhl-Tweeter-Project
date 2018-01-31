@@ -1,12 +1,15 @@
 .restOfTheTweets {
+
+}
+
+.tweet-box  {
   background-color: #D4D1D1;
   border-radius: 16px;
   border-style: solid;
   border-color: #6C6666;
-  margin-top: 2em;
+  margin: 2em 0;
   opacity: 0.6;
   transition: opacity .6s ease-in-out;
-
 }
 
 .restOfTheTweets:hover {
@@ -14,9 +17,16 @@
   transition: opacity .3s ease-in-out
 }
 
+.clear-fix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
 .restOfTheTweets header {
   margin: 1px;
   padding: 0 0 0 10px;
+
 }
 
 .restOfTheTweets .logo {
@@ -31,8 +41,9 @@
   font-size: 1em;
   display: inline-block;
   position: relative;
-  right: 345px;
+  float:left;
   font-style: oblique;
+  margin: 10px 0 0 10px;
 }
 .restOfTheTweets h2 {
   font-size: .6em;
@@ -47,13 +58,22 @@
   margin: 10px 3px;
   padding: 100px 40px 100px 30px;
   text-align: left;
-  font-size: .6em;
+  font-size: 1em;
 }
 
 
 .restOfTheTweets footer {
   border-style: hidden;
-  text-align: left;
-  font-size: 1em;
   padding: 0 0 0 15px;
+}
+
+.tweet-box footer h4 {
+  text-align: left;
+  font-size: .6em;
+  float: left;
+  margin: 8px;
+}
+.restOfTheTweets .tweet-icons {
+  float: right;
+  margin: 8px;
 }
