@@ -7,6 +7,7 @@
   padding-left: 2em;
   padding-right: 2em;
 
+
 }
 
 .new-tweet{                      /* the grey area*/
@@ -20,7 +21,7 @@
 
 .new-tweet h2{
   text-align: left;
-  margin-top: 30px
+  margin-top: 20px;
   margin-left: 30px;  /*not working*/
   margin-right: 30px;
   border-bottom: 1px solid black;

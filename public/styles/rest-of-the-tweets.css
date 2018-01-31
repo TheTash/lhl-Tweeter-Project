@@ -1,0 +1,44 @@
+.restOfTheTweets {
+  background-color: #D4D1D1;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: #6C6666;
+  margin-top: 2em;
+}
+
+.restOfTheTweets header {
+  margin: 1px;
+  padding: 0 0 0 10px;
+}
+
+.restOfTheTweets .logo {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  float: left;
+  margin: 10px 0 0 4px;
+}
+
+.restOfTheTweets h1 {
+  font-size: 1em;
+  display: inline-block;
+  position: relative;
+  right: 400px;
+}
+
+
+.restOfTheTweets h2 {
+  background-color: #ECECEC;
+  margin: 10px 3px;
+  padding: 100px 0 100px 10px;
+  text-align: left;
+  font-size: 1em;
+}
+
+
+.restOfTheTweets footer {
+  border-style: hidden;
+  text-align: left;
+  font-size: 1em;
+  padding: 0 0 0 15px;
+}
