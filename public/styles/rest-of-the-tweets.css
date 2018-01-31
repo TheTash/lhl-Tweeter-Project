@@ -23,16 +23,23 @@
   font-size: 1em;
   display: inline-block;
   position: relative;
-  right: 400px;
+  right: 345px;
+  font-style: oblique;
+}
+.restOfTheTweets h2 {
+  font-size: .6em;
+  display: inline-block;
+  float: right;
+  padding: 14px 14px;
 }
 
 
-.restOfTheTweets h2 {
+.restOfTheTweets h3 {
   background-color: #ECECEC;
   margin: 10px 3px;
-  padding: 100px 0 100px 10px;
+  padding: 100px 40px 100px 30px;
   text-align: left;
-  font-size: 1em;
+  font-size: .6em;
 }
 
 
