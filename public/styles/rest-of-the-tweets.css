@@ -4,6 +4,14 @@
   border-style: solid;
   border-color: #6C6666;
   margin-top: 2em;
+  opacity: 0.6;
+  transition: opacity .6s ease-in-out;
+
+}
+
+.restOfTheTweets:hover {
+  opacity: 1.0;
+  transition: opacity .3s ease-in-out
 }
 
 .restOfTheTweets header {
