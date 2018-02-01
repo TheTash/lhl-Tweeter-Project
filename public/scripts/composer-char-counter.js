@@ -3,11 +3,10 @@ $(document).ready(function () {
     const tweetMax = 140;
     let typedInput = $('#tweet')[0].value;
     let charRemaining = tweetMax - typedInput.length;
-
     if (charRemaining > 0){
-      $(this).siblings(".counter").html(charRemaining);
+      $(this).parent().find(".counter").text(charRemaining);
     } else {
-      $(this).siblings(".counter").html(charRemaining)
+      $(this).parents().find(".counter").text(charRemaining)
       .css("color", "red");
     }
   });

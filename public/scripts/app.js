@@ -35,25 +35,35 @@ $(document).ready(function(){
       articles_elm.prepend(createTweetElement(tweet));
     });
   }
+  $.get("/tweets", function(data){
+    renderTweets(data);
+  });
 
   $("form").submit(function(event){
-    if ( $('#tweet').val().length > 140) {
-      alert('brevity is the soul of wit: your desired tweet is too long.');
-    } else if ($('#tweet').val() === ''){
-      alert("I'm glad you're here, but you have got to say something, for this to mean anything.")
-    } else if($('#tweet').val() === null){
-      alert("Are you some sort of robot?");
+    const errorMessage = validate($('#tweet').val())
+    if (errorMessage) {
+      $('.error-message').text(errorMessage);
     } else {
       var serial = $(this).serialize();
       $.post("/tweets", serial, function(data, status) {
         console.log(data, 'data', status, 'status');
-      });
-      $.get("/tweets", function(data){
-        renderTweets(data);
+        $.get("/tweets", function(data){
+          renderTweets(data);
+        });
       });
     }
     event.preventDefault();
   });
+
+  function validate(content){
+    let errorMessage = "";
+    if ( content.length > 140) {
+      errorMessage = 'brevity is the soul of wit: your desired tweet is too long.';
+    } else if (content === ''){
+      errorMessage = "I'm glad you're here, but you have got to say something, for this to mean anything.";
+    }
+    return errorMessage;
+  }
 
   $("#compose-button").click(function(event){
     if ($(".new-tweet").is(":visible") ){
