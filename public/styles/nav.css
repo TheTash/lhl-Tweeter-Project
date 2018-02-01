@@ -14,12 +14,12 @@ html {
   border-top: 12px solid beige;
 }
 .navbar{
+  position: fixed;
   min-height: 80px;
   width: 100vw;
   padding-left: 2em;
   padding-right: 2em;
   color:  #e8fdff;
-
 }
 .navbar-inverse {
   background-color: #00a087
@@ -36,4 +36,10 @@ html {
   line-height: 2em;
   padding: 10px;
   margin: auto;
+}
+.navbar-inverse #compose-button {
+  display: inline-block;
+  float: right;
+  margin: 26px 20px;
+  min-height: 30px;
 }

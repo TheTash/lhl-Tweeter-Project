@@ -1,8 +1,8 @@
 .container {                     /*the white stuff */
   display: block;
   position: relative;
-  width: 1200px;
-  height: 1900px;
+  width: 60%;
+  height: 2400px;
   padding-top: 6em;
   padding-left: 2em;
   padding-right: 2em;
@@ -28,19 +28,28 @@
 }
 
 .new-tweet textarea {  /* child of h2*/
-  width: 900px;
+  width: 80%;
   padding-left: 10px;
-
+  display: block;
+  margin: auto;
 }
 
-.new-tweet input[type=submit]{  /* child of h2 */
+.new-tweet footer {
+  padding: 10px 10px;
+}
+.clear-fix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.new-tweet footer input[type=submit]{  /* child of h2 */
   position: relative;
-  width: 301px;
-  margin-bottom: 15px;
+  width: 14%;
+  float: left;
 }
 
-.counter{   /* child of h2*/
+.new-tweet footer .counter{   /* child of h2*/
   float: right;
-  margin-right: 50px;
-  margin-bottom: 5px;
+  margin-right: 5px;
 }

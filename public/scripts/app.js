@@ -35,13 +35,13 @@
     }
       $("form").submit(function(event){
         if ( $('#tweet').val().length > 140) {
-          event.stopPropagation();
-            alert('brevity is the soul of wit. Yuor tWeEt iS toO loNg');
+
+            alert('brevity is the soul of wit: your desired tweet is too long.');
         } else if ($('#tweet').val() === ''){
-          event.stopPropagation();
+
           alert("I'm glad you're here, but you have got to say something, for this to mean anything.")
         } else if($('#tweet').val() === null){
-          event.stopPropagation();
+
           alert("Are you some sort of robot?");
         } else {
           var serial = $(this).serialize();
