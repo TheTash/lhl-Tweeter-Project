@@ -51,13 +51,14 @@
   padding: 14px 14px;
 }
 
-
+/* FORMAT TWEETS */
 .restOfTheTweets h3 {
   background-color: #ECECEC;
   margin: 10px 3px;
   padding: 100px 40px 100px 30px;
   text-align: left;
   font-size: 1em;
+
 }
 
 

@@ -40,7 +40,6 @@
         $.post("/tweets", serial, function(data, status) {
           console.log(data, 'data', status, 'status');
         });
-
         $.get("/tweets", function(data){
           console.log(data);
           renderTweets(data);
