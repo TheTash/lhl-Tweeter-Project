@@ -36,7 +36,13 @@
       $("form").submit(function(event){
         if ( $('#tweet').val().length > 140) {
           event.stopPropagation();
-          console.log('this is too long');
+            alert('brevity is the soul of wit. Yuor tWeEt iS toO loNg');
+        } else if ($('#tweet').val() === ''){
+          event.stopPropagation();
+          alert("I'm glad you're here, but you have got to say something, for this to mean anything.")
+        } else if($('#tweet').val() === null){
+          event.stopPropagation();
+          alert("Are you some sort of robot?");
         } else {
           var serial = $(this).serialize();
           $.post("/tweets", serial, function(data, status) {
