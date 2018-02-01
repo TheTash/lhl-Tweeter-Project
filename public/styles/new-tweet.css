@@ -9,6 +9,14 @@
 
 
 }
+.error-message{
+  background-color: #CD1316;
+  font-size: 2.3em;
+  font-style: normal;
+  color: #08240E;
+  border-radius: 20px;
+  width: 40%;
+}
 
 .new-tweet{                      /* the grey area*/
   display: block;

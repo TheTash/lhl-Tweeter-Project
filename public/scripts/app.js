@@ -58,9 +58,9 @@ $(document).ready(function(){
   function validate(content){
     let errorMessage = "";
     if ( content.length > 140) {
-      errorMessage = 'brevity is the soul of wit: your desired tweet is too long.';
+      errorMessage = 'Brevity is the Soul of Wit. Your Desired Tweet is Too Long!'
     } else if (content === ''){
-      errorMessage = "I'm glad you're here, but you have got to say something, for this to mean anything.";
+      errorMessage = "I'm Glad You are Here, but You Have Got to Say Something for This to Mean Anything.";
     }
     return errorMessage;
   }
