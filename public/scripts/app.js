@@ -45,7 +45,7 @@ $(document).ready(function(){
 $("form").on("submit",function(event){
   const errorMessage = validate($('#tweet').val())
   if (errorMessage) {
-    $('.error-message').text(errorMessage).show().delay(6500).fadeOut();
+    $('.error-message').text(errorMessage).show().delay(2500).fadeOut();
   } else {
     var serial = $(this).serialize();
     $.post("/tweets", serial, function(data){
