@@ -1,5 +1,5 @@
 .restOfTheTweets {
-
+  overflow-wrap: break-word;
 }
 
 .tweet-box  {
@@ -18,9 +18,9 @@
 }
 
 .clear-fix::after {
-  display: table;
-  content: '';
   clear: both;
+  content: '';
+  display: table;
 }
 
 .restOfTheTweets header {
@@ -29,36 +29,35 @@
 }
 
 .restOfTheTweets .logo {
-  width: 60px;
-  height: 60px;
   display: inline-block;
   float: left;
+  height: 60px;
   margin: 10px 0 0 4px;
+  width: 60px;
 }
 
 .restOfTheTweets h1 {
-  font-size: 1em;
   display: inline-block;
-  position: relative;
-  float:left;
+  float: left;
+  font-size: 1em;
   font-style: oblique;
   margin: 10px 0 0 10px;
+  position: relative;
 }
 .restOfTheTweets h2 {
-  font-size: .6em;
   display: inline-block;
   float: right;
+  font-size: .6em;
   padding: 14px 14px;
 }
 
-/* FORMAT TWEETS */
+
 .restOfTheTweets h3 {
   background-color: #ECECEC;
+  font-size: 1em;
   margin: 10px 3px;
   padding: 100px 40px 100px 30px;
   text-align: left;
-  font-size: 1em;
-
 }
 
 
@@ -68,10 +67,10 @@
 }
 
 .tweet-box footer h4 {
-  text-align: left;
-  font-size: .6em;
   float: left;
+  font-size: .6em;
   margin: 8px;
+  text-align: left;
 }
 .restOfTheTweets .tweet-icons {
   float: right;

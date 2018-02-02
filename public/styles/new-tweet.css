@@ -10,19 +10,12 @@
 
 .error-message{
   background-color: #CD1316;
-  border-radius: 20px;
-  color: #08240E;
+  border-radius: 50px;
+  color: #fff;
   font-size: 2.3em;
   font-style: normal;
-  width: 40%;
-}
-.error-message{
-  background-color: #CD1316;
-  font-size: 2.3em;
-  font-style: normal;
-  color: #08240E;
-  border-radius: 20px;
-  width: 40%;
+  overflow-wrap: break-word;
+  width: 60%;
 }
 
 .new-tweet{                      /* the grey area*/
@@ -31,6 +24,7 @@
   border-radius: 16px;
   border-style: solid;
   display: block;
+  overflow-wrap: break-word;
   padding-left: 20px;
 }
 
@@ -47,7 +41,7 @@
   display: block;
   margin: auto;
   padding-left: 10px;
-  width: 80%;
+  width: 90%;
 }
 
 .new-tweet footer {
@@ -61,15 +55,18 @@
 
 }
 
-.new-tweet footer input[type=submit]{  /* child of h2 */
+.new-tweet footer input[type=submit] {  /* child of h2 */
+  background-color: #fff;
+  border-color: #6C6666;
+  border-style: double;
   float: left;
+  font-color: #fff;
   font-size: 0.8em;
   position: relative;
-  width: 40%;
-
+  width: 30%;
 }
 
-.new-tweet footer .counter{   /* child of h2*/
+.new-tweet footer .counter {   /* child of h2*/
   float: right;
   margin-right: 5px;
 }

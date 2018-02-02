@@ -38,19 +38,9 @@ $(document).ready(function(){
   $.get("/tweets", function(data){
     renderTweets(data);
   });
-<<<<<<< HEAD
 
-  $("form").submit(function(event){
-    const errorMessage = validate($('#tweet').val())
-    if (errorMessage) {
-      $('.error-message').text(errorMessage).show().delay(3000).fadeOut();
-    } else {
-      var serial = $(this).serialize();
-      $.post("/tweets", serial, function(data, status) {
-        console.log(data, 'data', status, 'status');
-        $.get("/tweets", function(data){
-          renderTweets(data);
-        });
+
+
 
 $("form").on("submit",function(event){
   const errorMessage = validate($('#tweet').val())
@@ -74,9 +64,9 @@ $("form").on("submit",function(event){
   function validate(content){
     let errorMessage = "";
     if ( content.length > 140) {
-      errorMessage = 'Brevity is the Soul of Wit. Your Desired Tweet is Too Long!';
+      errorMessage = 'Brevity Is The Soul Of Wit. Your Desired Tweet is Too Long!';
     } else if (content === ''){
-      errorMessage = "I'm Glad You are Here, but You Have Got to Say Something for This to Mean Anything.";
+      errorMessage = "I'm Glad You Are Here, But You Have Got To Say Something For This To Mean Anything.";
     }
     return errorMessage;
   }

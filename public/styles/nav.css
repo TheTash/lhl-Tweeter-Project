@@ -8,38 +8,42 @@ html {
 
 
 .navbar-fixed-top {
-  position: fixed;
-  z-index: 1030;
   border-radius: 28px;
   border-top: 12px solid beige;
-}
-.navbar{
   position: fixed;
-  min-height: 80px;
-  width: 100vw;
-  padding-left: 2em;
-  padding-right: 2em;
+  z-index: 1030;
+}
+.navbar {
   color:  #e8fdff;
+  min-height: 80px;
+  position: fixed;
+  padding: 0 2em;
+  width: 100vw;
 }
 .navbar-inverse {
   background-color: #00a087
 }
 
 #nav-bar .logo {
-  width: 80px;
-  height: 80px;
   float: left;
+  height: 80px;
+  width: 80px;
 }
 
 #nav-bar .header {
   font-size: 2em;
   line-height: 2em;
-  padding: 10px;
   margin: auto;
+  padding: 10px;
 }
-.navbar-inverse #compose-button {
+.navbar #compose-button {
+  background-color: #D6F0F0;
+  border-color: #C6F8F8;
+  border-style: solid;
   display: inline-block;
   float: right;
+  font-color: #fff;
+  height: 38px;
   margin: 26px 20px;
   min-height: 30px;
 }
