@@ -63,7 +63,7 @@
   font-color: #fff;
   font-size: 0.8em;
   position: relative;
-  width: 30%;
+  width: 100px;
 }
 
 .new-tweet footer .counter {   /* child of h2*/
