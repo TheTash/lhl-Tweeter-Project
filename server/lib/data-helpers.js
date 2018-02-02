@@ -13,14 +13,12 @@ module.exports = function makeDataHelpers(db) {
         db.tweets.push(newTweet);
         callback(null, true);
       });
+      db.collection("tweets").insertOne()
     },
 
     // Get all tweets in `db`, sorted by newest first
     getTweets: function(callback) {
-      simulateDelay(() => {
-        const sortNewestFirst = (a, b) => a.created_at - b.created_at;
-        callback(null, db.tweets.sort(sortNewestFirst));
-      });
+      db.collection("tweets").find().toArray(callback);
     }
 
   };
