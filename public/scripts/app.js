@@ -42,7 +42,7 @@ $(document).ready(function(){
   $("form").submit(function(event){
     const errorMessage = validate($('#tweet').val())
     if (errorMessage) {
-      $('.error-message').text(errorMessage);
+      $('.error-message').text(errorMessage).show().delay(3000).fadeOut();
     } else {
       var serial = $(this).serialize();
       $.post("/tweets", serial, function(data, status) {
@@ -72,4 +72,5 @@ $(document).ready(function(){
       $(".new-tweet").slideDown();
     }
   });
+
 });
