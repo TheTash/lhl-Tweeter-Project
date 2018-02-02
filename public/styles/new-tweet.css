@@ -2,7 +2,7 @@
   display: block;
   position: relative;
   width: 60%;
-  height: 2400px;
+  height: 100%;
   padding-top: 6em;
   padding-left: 2em;
   padding-right: 2em;
@@ -55,6 +55,7 @@
   position: relative;
   width: 14%;
   float: left;
+  font-size: 0.8em;
 }
 
 .new-tweet footer .counter{   /* child of h2*/

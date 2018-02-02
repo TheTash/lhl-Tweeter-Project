@@ -43,12 +43,12 @@ $(document).ready(function(){
     const errorMessage = validate($('#tweet').val())
     if (errorMessage) {
       $('.error-message').text(errorMessage).show().delay(2500).fadeOut();
+    } else {
       var serial = $(this).serialize();
       $.post("/tweets", serial, function(data, status) {
-        console.log(data, 'data', status, 'status');
-        $.get("/tweets", function(data){
-          renderTweets(data);
-        });
+      });
+      $.get("/tweets", function(data){
+        renderTweets(data);
       });
     }
     event.preventDefault();
@@ -57,7 +57,7 @@ $(document).ready(function(){
   function validate(content){
     let errorMessage = "";
     if ( content.length > 140) {
-      errorMessage = 'Brevity is the Soul of Wit. Your Desired Tweet is Too Long!'
+      errorMessage = 'Brevity is the Soul of Wit. Your Desired Tweet is Too Long!';
     } else if (content === ''){
       errorMessage = "I'm Glad You are Here, but You Have Got to Say Something for This to Mean Anything.";
     }
