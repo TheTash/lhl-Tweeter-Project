@@ -38,6 +38,7 @@ $(document).ready(function(){
   $.get("/tweets", function(data){
     renderTweets(data);
   });
+<<<<<<< HEAD
 
   $("form").submit(function(event){
     const errorMessage = validate($('#tweet').val())
@@ -50,17 +51,32 @@ $(document).ready(function(){
         $.get("/tweets", function(data){
           renderTweets(data);
         });
+=======
+$("form").on("submit",function(event){
+  const errorMessage = validate($('#tweet').val())
+  if (errorMessage) {
+    $('.error-message').text(errorMessage).show().delay(2500).fadeOut();
+  } else {
+    var serial = $(this).serialize();
+    $.post("/tweets", serial, function(data){
+      $.get("/tweets", {}, function(data){
+        renderTweets(data);
+>>>>>>> feature/mongodb
       });
-    }
-    event.preventDefault();
-  });
+    });
+  }
+  event.preventDefault();
+});
+
+
+
 
   function validate(content){
     let errorMessage = "";
     if ( content.length > 140) {
-      errorMessage = 'brevity is the soul of wit: your desired tweet is too long.';
+      errorMessage = 'Brevity is the Soul of Wit. Your Desired Tweet is Too Long!';
     } else if (content === ''){
-      errorMessage = "I'm glad you're here, but you have got to say something, for this to mean anything.";
+      errorMessage = "I'm Glad You are Here, but You Have Got to Say Something for This to Mean Anything.";
     }
     return errorMessage;
   }
