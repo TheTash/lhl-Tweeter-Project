@@ -40,8 +40,6 @@ $(document).ready(function(){
   });
 
 
-
-
 $("form").on("submit",function(event){
   const errorMessage = validate($('#tweet').val())
   if (errorMessage) {
@@ -51,16 +49,12 @@ $("form").on("submit",function(event){
     $.post("/tweets", serial, function(data){
       $.get("/tweets", {}, function(data){
         renderTweets(data);
-
       });
     });
   }
+  $('#tweet').val('');
   event.preventDefault();
 });
-
-
-
-
   function validate(content){
     let errorMessage = "";
     if ( content.length > 140) {
