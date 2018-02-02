@@ -38,21 +38,23 @@ $(document).ready(function(){
   $.get("/tweets", function(data){
     renderTweets(data);
   });
-
-  $("form").submit(function(event){
-    const errorMessage = validate($('#tweet').val())
-    if (errorMessage) {
-      $('.error-message').text(errorMessage).show().delay(2500).fadeOut();
-    } else {
-      var serial = $(this).serialize();
-      $.post("/tweets", serial, function(data, status) {
-      });
-      $.get("/tweets", function(data){
+$("form").on("submit",function(event){
+  const errorMessage = validate($('#tweet').val())
+  if (errorMessage) {
+    $('.error-message').text(errorMessage).show().delay(2500).fadeOut();
+  } else {
+    var serial = $(this).serialize();
+    $.post("/tweets", serial, function(data){
+      $.get("/tweets", {}, function(data){
         renderTweets(data);
       });
-    }
-    event.preventDefault();
-  });
+    });
+  }
+  event.preventDefault();
+});
+
+
+
 
   function validate(content){
     let errorMessage = "";

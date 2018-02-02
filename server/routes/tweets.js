@@ -5,6 +5,7 @@ const userHelper    = require("../lib/util/user-helper")
 const express       = require('express');
 const tweetsRoutes  = express.Router();
 
+
 module.exports = function(DataHelpers) {
 
   tweetsRoutes.get("/", function(req, res) {
@@ -23,6 +24,7 @@ module.exports = function(DataHelpers) {
       return;
     }
 
+
     const user = req.body.user ? req.body.user : userHelper.generateRandomUser();
     const tweet = {
       user: user,
@@ -32,13 +34,15 @@ module.exports = function(DataHelpers) {
       created_at: Date.now()
     };
 
-    DataHelpers.saveTweet(tweet, (err) => {
+    DataHelpers.saveTweet(tweet, (err, status) => {
+
       if (err) {
-        res.status(500).json({ error: err.message });
+        res.status(500).json({ error: err.message }).end();
       } else {
-        res.status(201).send();
+        res.send("01");
       }
     });
+
   });
 
   return tweetsRoutes;

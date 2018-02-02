@@ -1,61 +1,64 @@
 .container {                     /*the white stuff */
   display: block;
-  position: relative;
-  width: 60%;
   height: 100%;
   padding-top: 6em;
   padding-left: 2em;
   padding-right: 2em;
-
-
+  position: relative;
+  width: 60%;
 }
+
 .error-message{
   background-color: #CD1316;
+  border-radius: 20px;
+  color: #08240E;
   font-size: 2.3em;
   font-style: normal;
-  color: #08240E;
-  border-radius: 20px;
   width: 40%;
 }
 
 .new-tweet{                      /* the grey area*/
-  display: block;
+  background-color: #ECECEC;
+  border-color: grey;
   border-radius: 16px;
   border-style: solid;
-  border-color: grey;
-  background-color: #ECECEC;
+  display: block;
   padding-left: 20px;
 }
 
 .new-tweet h2{
-  text-align: left;
+  border-bottom: 1px solid black;
   margin-top: 20px;
   margin-left: 30px;  /*not working*/
   margin-right: 30px;
-  border-bottom: 1px solid black;
+  text-align: left;
+
 }
 
 .new-tweet textarea {  /* child of h2*/
-  width: 80%;
-  padding-left: 10px;
   display: block;
   margin: auto;
+  padding-left: 10px;
+  width: 80%;
 }
 
 .new-tweet footer {
   padding: 10px 10px;
 }
+
 .clear-fix::after {
-  display: table;
-  content: '';
   clear: both;
+  content: '';
+  display: table;
+
 }
 
 .new-tweet footer input[type=submit]{  /* child of h2 */
-  position: relative;
-  width: 14%;
   float: left;
   font-size: 0.8em;
+  position: relative;
+  width: 40%;
+
 }
 
 .new-tweet footer .counter{   /* child of h2*/
