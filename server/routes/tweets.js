@@ -20,7 +20,7 @@ module.exports = function(DataHelpers) {
 
   tweetsRoutes.post("/", function(req, res) {
     if (!req.body.text) {
-      res.status(400).json({ error: 'invalid request: no data in POST body'});
+      res.status(400).json({ error: 'invalid request: no data in POST body'}).end();
       return;
     }
 
@@ -39,7 +39,7 @@ module.exports = function(DataHelpers) {
       if (err) {
         res.status(500).json({ error: err.message }).end();
       } else {
-        res.send("01");
+        res.sendStatus(200);
       }
     });
 

@@ -56,11 +56,11 @@
 }
 
 .new-tweet footer input[type=submit] {  /* child of h2 */
-  background-color: #fff;
+  background-color: #D6F0F0;
   border-color: #6C6666;
   border-style: double;
+  color: black;
   float: left;
-  font-color: #fff;
   font-size: 0.8em;
   position: relative;
   width: 100px;

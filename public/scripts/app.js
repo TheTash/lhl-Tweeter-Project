@@ -41,19 +41,19 @@ $(document).ready(function(){
 
 
 $("form").on("submit",function(event){
+  event.preventDefault();
   const errorMessage = validate($('#tweet').val())
   if (errorMessage) {
     $('.error-message').text(errorMessage).show().delay(2500).fadeOut();
   } else {
     var serial = $(this).serialize();
-    $.post("/tweets", serial, function(data){
+    $.post("/tweets", serial, function(newTweet){
       $.get("/tweets", {}, function(data){
         renderTweets(data);
       });
     });
   }
   $('#tweet').val('');
-  event.preventDefault();
 });
   function validate(content){
     let errorMessage = "";
