@@ -1,4 +1,4 @@
-.restOfTheTweets {
+.rest-of-the-tweets {
   overflow-wrap: break-word;
 }
 
@@ -23,12 +23,12 @@
   display: table;
 }
 
-.restOfTheTweets header {
+.rest-of-the-tweets header {
   margin: 1px;
   padding: 0 0 0 10px;
 }
 
-.restOfTheTweets .logo {
+.rest-of-the-tweets .logo {
   display: inline-block;
   float: left;
   height: 60px;
@@ -36,7 +36,7 @@
   width: 60px;
 }
 
-.restOfTheTweets h1 {
+.rest-of-the-tweets h1 {
   display: inline-block;
   float: left;
   font-size: 1em;
@@ -44,7 +44,7 @@
   margin: 10px 0 0 10px;
   position: relative;
 }
-.restOfTheTweets h2 {
+.rest-of-the-tweets h2 {
   display: inline-block;
   float: right;
   font-size: .6em;
@@ -52,7 +52,7 @@
 }
 
 
-.restOfTheTweets h3 {
+.rest-of-the-tweets h3 {
   background-color: #ECECEC;
   font-size: 1em;
   margin: 10px 3px;
@@ -61,7 +61,7 @@
 }
 
 
-.restOfTheTweets footer {
+.rest-of-the-tweets footer {
   border-style: hidden;
   padding: 0 0 0 15px;
 }
@@ -72,10 +72,10 @@
   margin: 8px;
   text-align: left;
 }
-.restOfTheTweets .tweet-icons {
+.rest-of-the-tweets .tweet-icons {
   float: right;
   margin: 8px;
 }
-.restOfTheTweets .tweet-icons i {
+.rest-of-the-tweets .tweet-icons i {
   margin-right: 6px;
 }
