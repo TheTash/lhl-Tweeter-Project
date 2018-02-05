@@ -36,6 +36,7 @@
   width: 60px;
 }
 
+
 .rest-of-the-tweets h1 {
   display: inline-block;
   float: left;
@@ -44,7 +45,8 @@
   margin: 10px 0 0 10px;
   position: relative;
 }
-.rest-of-the-tweets h2 {
+
+.restOfTheTweets h2 {
   display: inline-block;
   float: right;
   font-size: .6em;
