@@ -39,7 +39,7 @@ module.exports = function(DataHelpers) {
       if (err) {
         res.status(500).json({ error: err.message }).end();
       } else {
-        res.send("01");
+        res.send(200);
       }
     });
 

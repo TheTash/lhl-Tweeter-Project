@@ -45,9 +45,10 @@ $("form").on("submit",function(event){
   } else {
     var serial = $(this).serialize();
     $.post("/tweets", serial, function(data){
-      $.get("/tweets", {}, function(data){
-        renderTweets(data);
-      });
+
+    });
+    $.get("/tweets", {}, function(data){
+      renderTweets(data);
     });
   }
   event.preventDefault();
