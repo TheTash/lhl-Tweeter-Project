@@ -41,7 +41,7 @@ $(document).ready(function(){
 
 
 $("form").on("submit",function(event){
-  event.preventDefault();
+
   const errorMessage = validate($('#tweet').val())
   if (errorMessage) {
     $('.error-message').text(errorMessage).show().delay(2500).fadeOut();
@@ -55,6 +55,7 @@ $("form").on("submit",function(event){
   }
   $('#tweet').val('');
 });
+
   function validate(content){
     let errorMessage = "";
     if ( content.length > 140) {
