@@ -34,7 +34,6 @@ $(document).ready(function(){
     tweets.forEach((tweet) => {
       articles_elm.prepend(createTweetElement(tweet));
     });
-
   }
 
   function getTweets(){
@@ -42,13 +41,12 @@ $(document).ready(function(){
       renderTweets(data);
     });
   }
+
   function postTweets(serial){
     $.post("/tweets", serial, function(data){
       getTweets(data);
     });
   }
-
-
 
 $("form").on("submit",function(event){
 
